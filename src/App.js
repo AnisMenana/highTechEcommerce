@@ -22,11 +22,9 @@ class App extends Component {
                 <div className="body">
                   <ParticleComponent />
                   <Navbar />
-
                   <div className="section1">
                     <Searchbar />
                   </div>
-
                   <Data />
                 </div>
               );

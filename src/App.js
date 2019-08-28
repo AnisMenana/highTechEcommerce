@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Navbar from "./Navbar";
-
 import ParticleComponent from "./ParticleComponent";
 import { BrowserRouter as Router, Link, NavLink } from "react-router-dom";
 import Route from "react-router-dom/Route";

@@ -8,9 +8,10 @@ import {
   CHANGE_IMGA,
   CHANGE_IMGB
 } from "../actionType";
+import { product } from "../../dataProduct";
 
 const initialState = {
-  todos: [],
+  productArray: product,
   title: "",
   category: "",
   brand: "",
@@ -23,7 +24,10 @@ const initialState = {
 const announceReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD:
-      return { ...state, todos: state.todos.concat(action.payload) };
+      return {
+        ...state,
+        productArray: state.productArray.concat(action.payload)
+      };
     case CHANGE_TITLE:
       return { ...state, title: action.payload };
     case CHANGE_CATEGORY:

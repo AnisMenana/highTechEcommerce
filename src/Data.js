@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import CardModel from "./CardModel";
 import { product } from "./dataProduct";
+import { connect } from "react-redux";
 
 class Data extends Component {
   render() {
     return (
       <div className="dataAnnonce">
-        {product.map(e => (
+        {this.props.productArray.map(e => (
           <CardModel
             imga={e.imga}
             imgb={e.imgb}
@@ -19,5 +20,13 @@ class Data extends Component {
     );
   }
 }
+const mapStateToProps = state => {
+  return {
+    productArray: state.announce.productArray
+  };
+};
 
-export default Data;
+export default connect(
+  mapStateToProps,
+  null
+)(Data);

@@ -6,6 +6,7 @@ import Route from "react-router-dom/Route";
 import Announce from "./Announce";
 import Searchbar from "./Searchbar";
 import Data from "./Data";
+import { product } from "./dataProduct";
 
 class App extends Component {
   render() {
@@ -24,7 +25,7 @@ class App extends Component {
                   <div className="section1">
                     <Searchbar />
                   </div>
-                  <Data />
+                  <Data product={product} />
                 </div>
               );
             }}

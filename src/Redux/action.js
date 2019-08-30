@@ -1,8 +1,15 @@
-import { FLTR } from "./actionType";
+import { ADD, INPUT_CHANGE } from "./actionType";
 
-export const fltr = payload => {
+export const add = payload => {
   return {
-    type: FLTR,
+    type: ADD,
+    payload
+  };
+};
+
+export const change = payload => {
+  return {
+    type: INPUT_CHANGE,
     payload
   };
 };

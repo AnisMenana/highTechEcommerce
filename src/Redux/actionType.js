@@ -1,2 +1,3 @@
 export const ADD = "ADD";
-export const INPUT_CHANGE = "INPUT_CHANGE";
+export const CHANGE_TITLE = "CHANGE_TITLE";
+export const CHANGE_CATEGORY = "CHANGE_CATEGORY";

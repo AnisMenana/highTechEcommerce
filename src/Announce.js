@@ -8,12 +8,10 @@ class Announce extends Component {
   };
 
   handleAdd = () => {
-    console.log(this.props.todos);
     this.props.ajouter();
   };
 
   render() {
-    console.log(this.props);
     return (
       <div>
         <input

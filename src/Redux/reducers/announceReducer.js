@@ -6,7 +6,6 @@ const initialState = {
 };
 
 const announceReducer = (state = initialState, action) => {
-  console.log(state);
   switch (action.type) {
     case ADD:
       return { ...state, todos: state.todos.concat(state.inputValue) };

@@ -1,4 +1,13 @@
-import { ADD, CHANGE_TITLE, CHANGE_CATEGORY } from "./actionType";
+import {
+  ADD,
+  CHANGE_TITLE,
+  CHANGE_CATEGORY,
+  CHANGE_BRAND,
+  CHANGE_DESCRIPTION,
+  CHANGE_PRICE,
+  CHANGE_IMGA,
+  CHANGE_IMGB
+} from "./actionType";
 
 export const add = payload => {
   return {
@@ -17,6 +26,41 @@ export const changeTitle = payload => {
 export const changeCategory = payload => {
   return {
     type: CHANGE_CATEGORY,
+    payload
+  };
+};
+
+export const changeBrend = payload => {
+  return {
+    type: CHANGE_BRAND,
+    payload
+  };
+};
+
+export const changeDescription = payload => {
+  return {
+    type: CHANGE_DESCRIPTION,
+    payload
+  };
+};
+
+export const changePrice = payload => {
+  return {
+    type: CHANGE_PRICE,
+    payload
+  };
+};
+
+export const changeImga = payload => {
+  return {
+    type: CHANGE_IMGA,
+    payload
+  };
+};
+
+export const changeImgb = payload => {
+  return {
+    type: CHANGE_IMGB,
     payload
   };
 };

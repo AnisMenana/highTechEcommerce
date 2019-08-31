@@ -6,7 +6,9 @@ import {
   CHANGE_DESCRIPTION,
   CHANGE_PRICE,
   CHANGE_IMGA,
-  CHANGE_IMGB
+  CHANGE_IMGB,
+  FILTER_CHANGE,
+  FILTER_BRAND
 } from "./actionType";
 
 export const add = payload => {
@@ -61,6 +63,19 @@ export const changeImga = payload => {
 export const changeImgb = payload => {
   return {
     type: CHANGE_IMGB,
+    payload
+  };
+};
+
+export const filterChange = payload => {
+  return {
+    type: FILTER_CHANGE,
+    payload
+  };
+};
+export const filterBrand = payload => {
+  return {
+    type: FILTER_BRAND,
     payload
   };
 };

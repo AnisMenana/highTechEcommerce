@@ -6,3 +6,5 @@ export const CHANGE_DESCRIPTION = "CHANGE_DESCRIPTION";
 export const CHANGE_PRICE = "CHANGE_PRICE";
 export const CHANGE_IMGA = "CHANGE_IMGA";
 export const CHANGE_IMGB = "CHANGE_IMGB";
+export const FILTER_CHANGE = "FILTER_CHANGE";
+export const FILTER_BRAND = "FILTER_BRAND";

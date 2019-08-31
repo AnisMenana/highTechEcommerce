@@ -14,6 +14,7 @@ class Data extends Component {
             title={e.title}
             description={e.description}
             price={e.price}
+            brand={e.brand}
           />
         ))}
       </div>

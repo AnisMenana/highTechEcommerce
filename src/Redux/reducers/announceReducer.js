@@ -6,7 +6,9 @@ import {
   CHANGE_DESCRIPTION,
   CHANGE_PRICE,
   CHANGE_IMGA,
-  CHANGE_IMGB
+  CHANGE_IMGB,
+  FILTER_CHANGE,
+  FILTER_BRAND
 } from "../actionType";
 import { product } from "../../dataProduct";
 
@@ -42,6 +44,15 @@ const announceReducer = (state = initialState, action) => {
       return { ...state, imga: action.payload };
     case CHANGE_IMGB:
       return { ...state, imgb: action.payload };
+    case FILTER_CHANGE:
+      return {
+        ...state,
+        productArray: state.productArray.filter(
+          (element, i) => i === action.payload
+        )
+      };
+    case FILTER_BRAND:
+      return { ...state, brand: action.payload };
     default:
       return state;
   }

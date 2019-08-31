@@ -7,6 +7,7 @@ import Announce from "./Announce";
 import Searchbar from "./Searchbar";
 import Data from "./Data";
 import { product } from "./dataProduct";
+import Categorie from "./Categorie";
 
 class App extends Component {
   render() {
@@ -22,9 +23,15 @@ class App extends Component {
                 <div className="body">
                   <ParticleComponent />
                   <Navbar />
-                  <div className="section1">
-                    <Searchbar />
+                  <div className="section">
+                    <div className="section1">
+                      <Searchbar />
+                    </div>
+                    <div className="btnCategorie">
+                      <Categorie />
+                    </div>
                   </div>
+
                   <Data product={product} />
                 </div>
               );

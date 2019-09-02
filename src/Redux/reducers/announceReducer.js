@@ -8,7 +8,8 @@ import {
   CHANGE_IMGA,
   CHANGE_IMGB,
   FILTER_CHANGE,
-  FILTER_BRAND
+  FILTER_BRAND,
+  FILTER_CATEGORY
 } from "../actionType";
 import { product } from "../../dataProduct";
 
@@ -47,12 +48,19 @@ const announceReducer = (state = initialState, action) => {
     case FILTER_CHANGE:
       return {
         ...state,
-        productArray: state.productArray.filter(
-          (element, i) => i === action.payload
+        productArray: product.filter((element, i) =>
+          element.title.toLowerCase().includes(action.payload.toLowerCase())
         )
       };
     case FILTER_BRAND:
-      return { ...state, brand: action.payload };
+      return { ...state, title: action.payload };
+    case FILTER_CATEGORY:
+      return {
+        ...state,
+        productArray: product.filter(
+          (e, i) => e.category.toLowerCase() === action.payload.toLowerCase()
+        )
+      };
     default:
       return state;
   }

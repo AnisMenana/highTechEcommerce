@@ -27,9 +27,6 @@ class App extends Component {
                     <div className="section1">
                       <Searchbar />
                     </div>
-                    <div className="btnCategorie">
-                      <Categorie />
-                    </div>
                   </div>
 
                   <Data product={product} />

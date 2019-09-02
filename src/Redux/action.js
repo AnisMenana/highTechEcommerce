@@ -8,7 +8,7 @@ import {
   CHANGE_IMGA,
   CHANGE_IMGB,
   FILTER_CHANGE,
-  FILTER_BRAND
+  FILTER_CATEGORY
 } from "./actionType";
 
 export const add = payload => {
@@ -73,9 +73,9 @@ export const filterChange = payload => {
     payload
   };
 };
-export const filterBrand = payload => {
+export const filterCategory = payload => {
   return {
-    type: FILTER_BRAND,
+    type: FILTER_CATEGORY,
     payload
   };
 };

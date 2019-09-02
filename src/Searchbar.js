@@ -1,10 +1,17 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { filterChange, filterBrand } from "./redux/action";
+import { filterChange } from "./redux/action";
 class Searchbar extends Component {
+  constructor() {
+    super();
+    this.state = {
+      filterName: ""
+    };
+  }
+
   handleFilter = () => {
     this.props.onFilter({
-      productArray: this.props.productArray
+      filterProductArray: this.props.filterProductArray
     });
   };
 
@@ -12,15 +19,23 @@ class Searchbar extends Component {
     this.props.onFilterBrand(event.target.value);
   };
   render() {
+    // console.log("filterName: ", this.state.filterName);
+    // console.log(
+    //   // this.props.arr.filter((element, i) => element.title.includes("iphone"))
+    //   this.props.arr.filter(e => e.title.includes("iPhone"))
+    // );
     return (
       <div className="search">
         <input
           className="input-search"
           type="text"
           placeholder="Votre recherche ici ..."
-          onChange={this.handleBrand1}
+          onChange={e => this.setState({ filterName: e.target.value })}
         />
-        <button onClick={this.handleFilter} className="btnSearch">
+        <button
+          onClick={() => this.props.filterChange(this.state.filterName)}
+          className="btnSearch"
+        >
           Rechercher
         </button>
       </div>
@@ -30,15 +45,14 @@ class Searchbar extends Component {
 
 const mapStateToProps = state => {
   return {
-    productArray: state.announce.productArray,
-    brand: state.announce.brand
+    arr: state.announce.productArray
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
-    onFilter: type => dispatch(filterChange(type)),
-    onFilterBrand: brand => dispatch(filterBrand(brand))
+    filterChange: type => dispatch(filterChange(type))
+    // onFilterBrand: title => dispatch(filterBrand(title))
   };
 };
 

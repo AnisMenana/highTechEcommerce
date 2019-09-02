@@ -3,6 +3,7 @@ import logo from "./image/logo.png";
 
 import Account from "./Account";
 import { BrowserRouter as Router, Link, NavLink } from "react-router-dom";
+import Categorie from "./Categorie";
 
 class Navbar extends Component {
   render() {
@@ -19,6 +20,11 @@ class Navbar extends Component {
             <NavLink activeStyle={{ color: "green" }} to="/Annonce" exact>
               <button className="btnSearch">Publier annonce</button>
             </NavLink>
+          </li>
+          <li>
+            <div className="btnCategorie">
+              <Categorie />
+            </div>
           </li>
           <li>
             <a href="#">

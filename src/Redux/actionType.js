@@ -8,3 +8,4 @@ export const CHANGE_IMGA = "CHANGE_IMGA";
 export const CHANGE_IMGB = "CHANGE_IMGB";
 export const FILTER_CHANGE = "FILTER_CHANGE";
 export const FILTER_BRAND = "FILTER_BRAND";
+export const FILTER_CATEGORY = "FILTER_CATEGORY";

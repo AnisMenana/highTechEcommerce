@@ -13,6 +13,7 @@ import {
 import { Form, FormGroup, Label, Input, Button } from "reactstrap";
 import Navbar from "./Navbar";
 import ParticleComponent from "./ParticleComponent";
+import { BrowserRouter as Router, Link, NavLink } from "react-router-dom";
 
 class Announce extends Component {
   handleTitle = event => {
@@ -115,10 +116,11 @@ class Announce extends Component {
                 ></Input>
               </FormGroup>
             </Form>
-
-            <Button onClick={this.handleAdd} color="success" size="sm" active>
-              Ajouter Annonce
-            </Button>
+            <NavLink activeStyle={{ color: "green" }} to="/" exact>
+              <Button onClick={this.handleAdd} color="success" size="sm" active>
+                Ajouter Annonce
+              </Button>
+            </NavLink>
           </div>
         </div>
       </div>

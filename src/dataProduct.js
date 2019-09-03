@@ -6,7 +6,7 @@ export const product = [
     description: "",
     price: "800 DT",
     category: "smartphone",
-    brand: "iphone"
+    brand: "apple"
   },
   {
     imga: "https://i.ebayimg.com/images/g/WhwAAOSwroJckNBu/s-l1600.jpg",
@@ -15,7 +15,7 @@ export const product = [
     description: "",
     price: "1000 DT",
     category: "smartphone",
-    brand: "iphone"
+    brand: "apple"
   },
   {
     imga: "https://i.ebayimg.com/images/g/yvgAAOSw52NdJyHJ/s-l1600.jpg",
@@ -24,7 +24,7 @@ export const product = [
     description: "",
     price: "500 DT",
     category: "smartphone",
-    brand: "iphone"
+    brand: "apple"
   },
   {
     imga: "https://i.ebayimg.com/images/g/1WIAAOSwBlxcwfJi/s-l1600.jpg",
@@ -77,7 +77,8 @@ export const product = [
     title: "Hp 15.6 i7 16go 512ssd",
     description: "",
     price: "2200DT",
-    category: "laptop"
+    category: "laptop",
+    brand: "hp"
   },
   {
     imga: "https://i.ebayimg.com/images/g/EB8AAOSwhY9cUqr3/s-l1600.jpg",
@@ -85,7 +86,8 @@ export const product = [
     title: "Canon EOS 5d Mark II",
     description: "",
     price: "3200DT",
-    category: "camera"
+    category: "camera",
+    brand: "canon"
   },
   {
     imga: "https://i.ebayimg.com/00/s/NzAwWDcwMA==/z/rxwAAOSwB9Jc2sAE/$_32.JPG",
@@ -93,7 +95,8 @@ export const product = [
     title: "Photo Nikon D850",
     description: "",
     price: "5800DT",
-    category: "camera"
+    category: "camera",
+    brand: "nikon"
   },
   {
     imga: "https://i.ebayimg.com/images/g/HtkAAOSwgHRdOLNd/s-l1600.jpg",
@@ -101,6 +104,7 @@ export const product = [
     title: "Fujifilm X100F 24,3 compact",
     description: "",
     price: "2800T",
-    category: "camera"
+    category: "camera",
+    brand: "fujifilm"
   }
 ];

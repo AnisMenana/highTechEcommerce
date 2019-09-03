@@ -16,6 +16,9 @@ class CardModel extends Component {
           <div class="price">
             <p>{this.props.price}</p>
           </div>
+          <a href="#" class="add-to-cart">
+            detail<i class="ion-android-checkbox-outline"></i>
+          </a>
         </figure>
       </div>
     );

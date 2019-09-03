@@ -202,7 +202,7 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  height: 100%;
+  min-height: 670px;
 }
 .btnSearch {
   border-radius: 5px;

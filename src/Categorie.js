@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { filterCategory } from "./redux/action";
+import { BrowserRouter as Router, Link, NavLink } from "react-router-dom";
 
 class Categorie extends Component {
   render() {
@@ -13,25 +14,31 @@ class Categorie extends Component {
     );
     return (
       <div>
-        <input
-          type="button"
-          value="Smartphone"
-          className="btnSearch"
-          onClick={e => this.props.filterCategory(e.target.value)}
-        />
+        <NavLink activeStyle={{ color: "green" }} to="/" exact>
+          <input
+            type="button"
+            value="Smartphone"
+            className="btnSearch"
+            onClick={e => this.props.filterCategory(e.target.value)}
+          />
+        </NavLink>
 
-        <input
-          type="button"
-          value="Laptop"
-          className="btnSearch"
-          onClick={e => this.props.filterCategory(e.target.value)}
-        />
-        <input
-          type="button"
-          value="Camera"
-          className="btnSearch"
-          onClick={e => this.props.filterCategory(e.target.value)}
-        />
+        <NavLink activeStyle={{ color: "green" }} to="/" exact>
+          <input
+            type="button"
+            value="Laptop"
+            className="btnSearch"
+            onClick={e => this.props.filterCategory(e.target.value)}
+          />
+        </NavLink>
+        <NavLink activeStyle={{ color: "green" }} to="/" exact>
+          <input
+            type="button"
+            value="Camera"
+            className="btnSearch"
+            onClick={e => this.props.filterCategory(e.target.value)}
+          />
+        </NavLink>
       </div>
     );
   }

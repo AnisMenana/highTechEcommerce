@@ -51,6 +51,10 @@ class Announce extends Component {
   };
 
   render() {
+    this.state = {
+      fields: {},
+      errors: {}
+    };
     return (
       <div>
         <Navbar />
@@ -64,6 +68,7 @@ class Announce extends Component {
                   type="text"
                   value={this.props.title}
                   onChange={this.handleTitle}
+                  placeholder="Titre"
                 ></Input>
               </FormGroup>
               <FormGroup>

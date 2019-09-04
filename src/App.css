@@ -1,5 +1,5 @@
 .logo {
-  height: 55px;
+  height: 70px;
 }
 
 .logoBox {
@@ -234,4 +234,19 @@ button {
 .section {
   display: flex;
   flex-direction: column;
+}
+
+.footer {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid #eef2f2;
+}
+
+.links {
+  font-size: 0.75em;
+  color: #ababab;
+
+  text-align: center;
 }

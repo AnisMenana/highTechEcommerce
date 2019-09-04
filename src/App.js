@@ -8,6 +8,7 @@ import Searchbar from "./Searchbar";
 import Data from "./Data";
 import { product } from "./dataProduct";
 import Categorie from "./Categorie";
+import Footer from "./footer";
 
 class App extends Component {
   render() {
@@ -36,6 +37,7 @@ class App extends Component {
           />
           <Route path="/Annonce" exact strict component={Announce} />
         </Router>
+        <Footer />
       </div>
     );
   }
